@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDB Movies</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+   <div class="max-w-[1200px] w-full mx-auto py-5">
+        <form class="search-form" action="https://htmlacademy.ru" method="GET">
+            <input class="form-input w-full py-3 border-solid border-2 px-2 border-gray-600 outline-none rounded" type="search" placeholder="Search...">
+        </form>
+        <div class="movies w-full flex justify-between items-center flex-wrap mt-6">
+
+        </div>
+
+        <template class="omdb-template">
+            <div class="omdb-movie w-72 mt-5 border-[2px] border-solid border-black bg-cyan-600 rounded">
+                <img  class="omdb-img w-full h-80" src="" alt="OMDB_IMG">
+                <div class="px-4 py-4 flex justify-between items-center text-white text-xl ">
+                    <h1 class="omdb-desc font-medium">Description</h1>
+                    <h2 class="omdb-year">year</h2>
+                </div>
+            </div>
+        </template>
+
+        <div class="flex justify-center items-center gap-3">
+            <button class="desc">prev</button>
+            <span class="number">1</span>
+            <button class="incr">next</button>
+       </div>
+   </div>
+
+   
+
+
+   
+   <script src="./js/app.js"></script>
+</body>
+</html>
